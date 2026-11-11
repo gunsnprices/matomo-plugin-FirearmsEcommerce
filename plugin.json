@@ -1,0 +1,42 @@
+{
+    "name": "FirearmsEcommerce",
+    "description": "Ecommerce reports for gun and ammo shops: sales by caliber, brand and product type, and the cost per round of ammunition.",
+    "version": "5.0.0",
+    "theme": false,
+    "require": {
+        "matomo": ">=5.0.0,<6.0.0-b1",
+        "php": ">=7.4.0"
+    },
+    "authors": [
+        {
+            "name": "GunsNPrices",
+            "email": "app@gunsnprices.com",
+            "homepage": "https://gunsnprices.com"
+        }
+    ],
+    "homepage": "https://gunsnprices.com",
+    "support": {
+        "email": "app@gunsnprices.com",
+        "issues": "https://github.com/gunsnprices/matomo-plugin-FirearmsEcommerce/issues",
+        "source": "https://github.com/gunsnprices/matomo-plugin-FirearmsEcommerce"
+    },
+    "license": "GPL-3.0+",
+    "keywords": [
+        "ecommerce",
+        "firearms",
+        "guns",
+        "ammo",
+        "ammunition",
+        "caliber",
+        "brands",
+        "cost-per-round",
+        "gun-shop",
+        "products"
+    ],
+    "category": "insights",
+    "archive": {
+        "exclude": [
+            "/tools"
+        ]
+    }
+}

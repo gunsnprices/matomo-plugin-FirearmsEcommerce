@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Unit tests without Matomo. Integration tests run inside Matomo: ./console tests:run FirearmsEcommerce -->
+<phpunit bootstrap="tests/Unit/bootstrap.php" colors="true" beStrictAboutOutputDuringTests="true">
+    <testsuites>
+        <testsuite name="FirearmsEcommerce unit tests">
+            <directory>tests/Unit</directory>
+        </testsuite>
+    </testsuites>
+</phpunit>
