@@ -50,7 +50,7 @@ final class ProductClassifier
     /** Accessories for ammunition, which the library can read as ammunition ("MTM Ammo Box 9mm 100 Round"). */
     private const AMMO_ACCESSORY = '/\b(?:ammo\s+(?:cans?|box(?:es)?|crates?|pouch(?:es)?|belts?|carriers?|holders?)|'
         . 'shell\s+(?:holders?|carriers?)|speed\s*loaders?|snap\s+caps?|dummy\s+rounds?|mag(?:azine)?\s+loaders?|bandoleers?|'
-        . 'cartridge\s+(?:belts?|holders?|boxes|box)|reloading|dies?|die\s+sets?)\b/i';
+        . 'cartridge\s+(?:belts?|holders?|boxes|box)|reloading|dies?|die\s+sets?|bullet\s+molds?|molds?)\b/i';
 
     /** Words before an accessory noun that mean the item comes with the firearm ("15rd w/ 2 magazines"). */
     private const INCLUDED = '/(?:\bw\/|\bwith\b|\bwithout\b|\bno\b|\band\b|&|\+|\bincl\w*|\bplus\b|\(\d\)|\b\d\b|\btwo\b|'
@@ -224,6 +224,10 @@ final class ProductClassifier
 
     private function isAccessory(string $text): bool
     {
+        // "Barrel for Glock 19", "Grips fits Ruger 10/22": a product made for another brand's firearm
+        if (preg_match('/\b(?:for|fits|compatible\s+with)\s+(.{2,60})$/i', $text, $for) && $this->brands->find($for[1], false) !== '') {
+            return true;
+        }
         if (!preg_match_all(self::ACCESSORY, $text, $m, PREG_OFFSET_CAPTURE)) {
             return false;
         }

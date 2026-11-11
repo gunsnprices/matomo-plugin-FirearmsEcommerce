@@ -28,7 +28,6 @@ class GetAmmoCalibers extends Base
         $this->metrics[] = 'rounds_revenue';
         $this->processedMetrics[] = new CostPerRound();
         $this->order = 4;
-        $this->isWide = true;
     }
 
     public function getMetrics()

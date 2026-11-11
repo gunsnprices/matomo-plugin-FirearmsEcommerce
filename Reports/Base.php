@@ -26,8 +26,8 @@ use Piwik\Widget\WidgetsList;
  */
 abstract class Base extends Report
 {
-    /** Reports with many columns use the full width of the page. */
-    protected $isWide = false;
+    /** The reports have up to seven columns, so each one uses the full width of the page. */
+    protected $isWide = true;
 
     protected function init()
     {

@@ -36,7 +36,8 @@
     "category": "insights",
     "archive": {
         "exclude": [
-            "/tools"
+            "/tools",
+            "/phpunit.xml.dist"
         ]
     }
 }

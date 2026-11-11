@@ -19,7 +19,7 @@
         "ReportProductTypes": "Firearms, ammunition and other products",
         "ReportProductTypesDocumentation": "Sales of firearms, ammunition and other products (accessories, optics, parts). The type is read from the product name or SKU and, if the setting is on, from the product categories.",
         "ReportBrands": "Brands",
-        "ReportBrandsDocumentation": "Sales by brand. The brand is taken from the firearm model when the parser knows it, otherwise from a list of about 150 firearm, ammunition, optics and accessory brands. Products of other brands are grouped as Unknown.",
+        "ReportBrandsDocumentation": "Sales by brand. The brand is taken from the firearm model when the parser knows it, otherwise from a list of 126 firearm, ammunition, optics and accessory brands. Products of other brands are grouped as Unknown.",
         "ReportFirearmCalibers": "Firearms by caliber",
         "ReportFirearmCalibersDocumentation": "Firearm sales by caliber or gauge. The first caliber in the product name is used. Firearms whose name has no caliber are grouped as Unknown.",
         "ReportAmmoCalibers": "Ammunition by caliber",

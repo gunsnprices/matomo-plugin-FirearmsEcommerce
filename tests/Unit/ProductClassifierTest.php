@@ -73,6 +73,8 @@ class ProductClassifierTest extends TestCase
             ['Holosun HS507C X2 Red Dot', $other, 'Holosun', '', null],
             ['Hornady Lock-N-Load .308 Win Die Set', $other, 'Hornady', '', null],
             ['MTM Ammo Box 9mm 100 Round', $other, '', '', null],
+            ['Faxon 9mm Barrel for Glock 19', $other, '', '', null],
+            ['Lyman 9mm Bullet Mold', $other, '', '', null],
             ['Gift Card $50', $other, '', '', null],
         ];
     }

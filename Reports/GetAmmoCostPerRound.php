@@ -29,7 +29,6 @@ class GetAmmoCostPerRound extends Base
         $this->processedMetrics[] = new RoundsPerBox();
         $this->processedMetrics[] = new CostPerRound();
         $this->order = 5;
-        $this->isWide = true;
     }
 
     public function getMetrics()
